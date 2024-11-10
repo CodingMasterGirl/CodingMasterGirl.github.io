@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Boba Tea Shop</title>
+    <style>
+      .container {
+        width: 100%;
+        overflow: hidden;
+        /* Clear floats */
+      }
+
+      .container h1 {
+        float: left;
+        margin-right: 10px;
+        /* Add some space between header and image */
+      }
+
+      .container img {
+        float: right;
+        cursor: pointer;
+        /* Change mouse cursor to a hand */
+      }
+    </style>
+  </head>
+  <body style="background-color: pink;">
+    <div class="container">
+      <h1>Boba Tea Shop!</h1>
+      <img
+        id="bobaImage"
+        src="cute-orange-boba-tea-pastel-background_927844-276.avif"
+        alt="Boba Tea Image"
+        width="50"
+        height="50"
+      />
+    </div>
+
+    <audio id="myAudio" src="aduiofile.mp4">
+      Your browser does not support the audio element.
+    </audio>
+
+    <video src="videoplayback.mp4" width="300" height="300" controls>
+    </video>
+
+    <h3 id="purple"> My favorite boba tea </h3>
+    <ul>
+      <li> Black Milk Tea </li>
+      <li> Taro Milk Tea </li>
+      <li> Thai Milk Tea </li>
+      <li> Brown Sugar Milk Tea </li>
+      <li> Strawberry Milk Tea </li>
+      <li> Mango Tea </li>
+    </ul>
+
+    <style>
+      p {
+        font-family: fantasy;
+        font-size: 20px;
+        color: black;
+      }
+
+      #purple {
+        color: #ff00ff;
+      }
+    </style>
+
+    <script>
+      var bobaImage = document.getElementById("bobaImage");
+      var myAudio = document.getElementById("myAudio");
+
+      bobaImage.addEventListener("click", function () {
+        myAudio.play();
+      });
+    </script>
+
+  </body>
+</html>
